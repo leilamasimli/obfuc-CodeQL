@@ -1,0 +1,10 @@
+Package-Name,Link,Path,Date-Download,Trigger,Description,Cluster,Query
+tkinter,https://www.npmjs.com/advisories/500,/package/package-setup.js,15.03.24,Install,Steals environment variables and sends them to attacker-controlled locations,1,tkinter_analysis.ql
+eslint-config-eslint,https://eslint.org/blog/2018/07/postmortem-for-malicious-package-publishes,/package/build.js,15.03.24,Install,Downloads code from pastebin.com, executes it, and exfiltrates npmrc file contents to attacker,11,eslint-config-eslint_analysis.ql
+code-oss-dev,https://security.snyk.io/vuln/SNYK-JS-CODEOSSDEV-1585137,/package/index.js,15.03.24,Install,Sends system data (OS version, environment variables, ports, hostnames, network interfaces, CPUs) to enjglpdgtgrbn4b.m.pipedream.net,20,code-oss-dev_analysis.ql
+component-emiter,https://www.npmjs.com/package/component-emiter,/package/index.js,15.03.24,Runtime,Retrieves update.json from 23.94.46.191 (port 80), creates and executes a file with data from the site,23,component-emiter_analysis.ql
+@xvideos_alerts,https://twitter.com/Checkmarx/status/1458191508167749635,/package/build-project.js,15.03.24,Install,Malicious code enumerates system details, executes attacker’s payload upon installation, and sends data via DNS tunneling to .ex.neversummer.xyz,41,alerts_analysis.ql
+mollie-shopware,https://checkmarx.com/blog/a-beautiful-factory-for-malicious-packages/,package/index.js,15.03.24,Install,Exfiltrates OS info and environment variables via DNS tunneling to a webhook,54,mollie-shopware_analysis.ql
+gsap-tween,no link,/package/index.js,15.03.24,Install,Sends fingerprinting data to attacker-controlled locations,,gsap-tween_analysis.ql
+bleeding-edge-css,no link,/package/index.js,15.03.24,Install,Opens a remote shell upon installation, affecting both Windows and *nix systems,,bleeding-edge-css_analysis.ql
+alprazolamdiv,no link,/package/src/client/actions/UserGet.js,15.03.24,Unknown,Steals tokens and credentials, exfiltrates to attacker-controlled API, injects malware into Discord for persistence,,alprazolamdiv_analysis.ql
