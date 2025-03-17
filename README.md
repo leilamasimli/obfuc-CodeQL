@@ -34,7 +34,7 @@ This work evaluates **how obfuscation techniques impact the detection of malicio
 - **10 malicious npm packages** analyzed in three forms:  
   - **Original**: The malicious code stored in `packages/database`. 
   - **Obfuscated**: Each package has 12 obfuscated variants stored in `packages/database/package_name/obfuscated`.
-  - **Deobfuscated**: The deobfuscated codes is stored in `packages/database/package_name/obfuscated`.
+  - **Deobfuscated**: The deobfuscated codes is stored in `packages/database/package_name/deobfuscated`.
 - **CodeQL Queries**: Developed CodeQL queries stored in `queries` to detect malicious behavior in npm packages. 
 - **Metadata**: `packages-metadata.csv` tracking detection rates and methodologies.  
 
